@@ -2,22 +2,16 @@
   box-sizing: border-box;
 }
 
-#header-wrapper {
-  box-shadow: rgba(50, 50, 70, 0.1) 0 10px 20px -2px;
-}
-
 .header {
   display: flex;
   flex-direction: column;
-  width: 1050px;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 12px auto 0 auto;
+  margin: 12px 0;
+  background-color: white;
 }
 
 /* 멤버 영역 */
 .member {
+  padding: 0 115px;
   display: flex;
   justify-content: flex-end;
   order: -1;
@@ -45,6 +39,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  padding: 0 115px;
 }
 
 /* 로고 영역 */
@@ -136,11 +131,20 @@
 }
 
 /* 메뉴(네비게이션) 영역 */
+#nav-wrapper {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
+  width: 100%;
+  top: 120px;
+}
+
 .menu-container {
+  width: 100%;
+  height: 55px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 600px;
-  margin: 20px 0;
+  padding: 0 115px;
 }
 
 .category {
