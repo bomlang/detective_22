@@ -7,100 +7,172 @@
     <title>장바구니 - 마켓칼리</title>
   </head>
   <body>
-    <header class="header">
-      <section class="top-container">
-        <div class="logo-box">
-          <div class="logo-wrapper">
-            <h1 class="logo-box__title">
-              <img src="./imgs/header/logo.png" alt="마켓칼리 로고" />
-              <!-- 접근성 태그 추가 필요 -->
-              <a href="/" class="logo-box__market">마켓칼리</a>
-            </h1>
-            <!-- 가상요소 | 추가 필요 / HTML 마크업, CSS 가상요소 뭐가 더 좋을지? -->
-            <h2 class="logo-box__beauty-wrapper">
-              <a href="/" class="logo-box__beauty">뷰티칼리</a>
-            </h2>
-          </div>
-        </div>
-
-        <form action="#" method="get" class="search-form">
-          <fieldset>
-            <legend class="a11y-hidden">검색폼</legend>
-            <div class="search-form__box">
-              <label for="search" class="a11y-hidden search-form__label"
-                >검색어</label
-              >
-              <input
-                type="search"
-                id="search"
-                name="search"
-                required
-                class="search-form__input"
-                placeholder="검색어를 입력하세요."
-              />
-              <button type="submit" class="search-form__button">
-                <img src="./imgs/header/group.png" alt="" />
-              </button>
+    <div id="header-wrapper">
+      <header class="header">
+        <section class="top-container">
+          <div class="logo-box">
+            <div class="logo-wrapper">
+              <h1 class="logo-box__title">
+                <img src="./imgs/header/logo.png" alt="마켓칼리 로고" />
+                <!-- 접근성 태그 추가 필요 -->
+                <a href="/" class="logo-box__market">마켓칼리</a>
+              </h1>
+              <!-- 가상요소 | 추가 필요 / HTML 마크업, CSS 가상요소 뭐가 더 좋을지? -->
+              <h2 class="logo-box__beauty-wrapper">
+                <a href="/" class="logo-box__beauty">뷰티칼리</a>
+              </h2>
             </div>
-          </fieldset>
-        </form>
-
-        <section class="sub-menu">
-          <a
-            href="/"
-            class="sub-menu__map sub-menu__item"
-            aria-label="배송지 추가"
-          >
-            <img src="./imgs/header/Location.png" alt="" />
-          </a>
-          <a
-            href="/"
-            class="sub-menu__like sub-menu__item"
-            aria-label="찜 목록"
-          >
-            <img src="./imgs/header/Heart.png" alt=""
-          /></a>
-          <a
-            href="/"
-            class="sub-menu__wish sub-menu__item"
-            aria-label="장바구니 메뉴"
-          >
-            <img src="./imgs/header/Cart-1.png" alt=""
-          /></a>
-        </section>
-      </section>
-
-      <ul class="member">
-        <!-- 가상요소 | 추가 필요 -->
-        <li class="member__item"><a href="/">회원가입</a></li>
-        <li class="member__item"><a href="/">로그인</a></li>
-        <li class="member__item"><a href="/">고객센터</a></li>
-      </ul>
-
-      <div id="nav-wrapper">
-        <nav class="menu-container">
-          <div class="category">
-            <img
-              src="./imgs/header/hanburger_black.png"
-              alt="카테고리 펼치기"
-            />
-            <span class="category__text">카테고리</span>
           </div>
-          <ul class="menu">
-            <li class="menu__item"><a href="/">신상품</a></li>
-            <li class="menu__item"><a href="/">베스트</a></li>
-            <li class="menu__item"><a href="/">알뜰쇼핑</a></li>
-            <li class="menu__item"><a href="/">특가/혜택</a></li>
-          </ul>
-          <div class="menu__post">
-            <a href="#">
-              <span>샛별・택배</span>
-              <span>배송안내</span>
+
+          <form action="#" method="get" class="search-form">
+            <fieldset>
+              <legend class="a11y-hidden">검색폼</legend>
+              <div class="search-form__box">
+                <label for="search" class="a11y-hidden search-form__label" ~
+                  >검색어</label
+                >
+                <input
+                  type="search"
+                  id="search"
+                  name="search"
+                  required
+                  class="search-form__input"
+                  placeholder="검색어를 입력하세요."
+                />
+                <button type="submit" class="search-form__button">
+                  <img src="./imgs/header/group.png" alt="" />
+                </button>
+              </div>
+            </fieldset>
+          </form>
+
+          <section class="sub-menu">
+            <a
+              href="/"
+              class="sub-menu__map sub-menu__item"
+              aria-label="배송지 추가"
+            >
+              <img src="./imgs/header/Location.png" alt="" />
             </a>
-          </div>
-        </nav>
-      </div>
-    </header>
+            <a
+              href="/"
+              class="sub-menu__like sub-menu__item"
+              aria-label="찜 목록"
+            >
+              <img src="./imgs/header/Heart.png" alt=""
+            /></a>
+            <a
+              href="/"
+              class="sub-menu__wish sub-menu__item"
+              aria-label="장바구니 메뉴"
+            >
+              <img src="./imgs/header/Cart-1.png" alt=""
+            /></a>
+          </section>
+        </section>
+
+        <ul class="member">
+          <!-- 가상요소 | 추가 필요 -->
+          <li class="member__item"><a href="/">회원가입</a></li>
+          <li class="member__item"><a href="/">로그인</a></li>
+          <li class="member__item"><a href="/">고객센터</a></li>
+        </ul>
+
+        <div id="nav-wrapper">
+          <nav class="menu-container">
+            <div class="category">
+              <img
+                src="./imgs/header/hanburger_black.png"
+                alt="카테고리 펼치기"
+              />
+              <span class="category__text">카테고리</span>
+              <div class="category__wrapper">
+                <ul class="category__list">
+                  <li class="category__item">
+                    <span class="category__title">선물하기</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">채소</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">과일‧견과‧쌀</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">수산‧해산‧건어물</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">정육‧계란</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">국‧반찬‧메인요리</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">샐러드‧간편식</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">면‧양념‧오일</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">생수‧음료‧우유‧커피</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">간식‧과자‧떡</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">베이커리‧치즈‧델리</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">건강식품</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">와인</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">전통주</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">생활용품‧리빙‧캠핑</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">스킨케어‧메이크업</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">헤어‧바디‧구강</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">주방용품</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">가전제품</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">반려동물</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">베이비‧키즈‧완구</span>
+                  </li>
+                  <li class="category__item">
+                    <span class="category__title">여행‧티켓</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="menu">
+              <li class="menu__item"><a href="/">신상품</a></li>
+              <li class="menu__item"><a href="/">베스트</a></li>
+              <li class="menu__item"><a href="/">알뜰쇼핑</a></li>
+              <li class="menu__item"><a href="/">특가/혜택</a></li>
+            </ul>
+            <div class="menu__post">
+              <a href="#">
+                <span>샛별・택배</span>
+                <span>배송안내</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
 
     <main class="order">
       <h2 class="order-title">장바구니</h2>
