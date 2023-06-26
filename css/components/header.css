@@ -25,6 +25,20 @@
 
 .member__item a {
   margin: 0 10px;
+  font-size: 12px;
+}
+
+.member__item:last-child::after {
+  content: "";
+  display: inline-block;
+  background: url(../../imgs/header/down_icon.png) no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.member__item:hover {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 .member__item:nth-child(-n + 2)::after {
