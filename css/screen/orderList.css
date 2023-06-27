@@ -6,20 +6,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1050px;
-  height: 709px;
   margin-left: auto;
   margin-right: auto;
   padding: 80px 0;
+  margin-top: 20px;
 }
 
 .order-title {
   font-size: 32px;
   font-weight: 600;
+  margin-bottom: 70px;
 }
 
 .order-wrapper {
   display: flex;
+  position: relative;
+  height: 200vh;
 }
 
 .cash {
@@ -27,6 +29,22 @@ body {
   flex-direction: column;
   width: 284px;
   height: 489px;
+  right: 50px;
+}
+
+/* 아이템 전체선택 구분선 추가 */
+.item__num {
+  display: flex;
+  align-items: center;
+}
+
+.item__num::after {
+  content: "";
+  width: 1px;
+  height: 13px;
+  margin: 0 14px;
+  display: inline-block;
+  border-right: 1px solid var(--gray-color);
 }
 
 /* 주문내역 영역 */
