@@ -15,9 +15,7 @@
 
 /* screen css */
 @import url(./screen/orderList.css);
-<<<<<<< HEAD
-@import url(./screen/register.css);
-=======
 @import url(./screen/main.css);
 @import url(./screen/special.css);
->>>>>>> login
+@import url(./screen/register.css);
+@import url(./screen/login.css);

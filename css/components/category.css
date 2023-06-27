@@ -27,6 +27,9 @@
   top: 30px;
   left: 2px;
   z-index: 10;
+  border: 1.5px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .category__item {
