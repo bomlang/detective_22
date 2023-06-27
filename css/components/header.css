@@ -146,6 +146,7 @@
 .search-form__button {
   background-color: white;
   border: none;
+  cursor: pointer;
 }
 
 /* 서브메뉴 영역 */
