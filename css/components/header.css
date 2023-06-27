@@ -3,17 +3,19 @@
 }
 
 #header-wrapper {
-  box-shadow: rgba(50, 50, 70, 0.1) 0 10px 20px -2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   width: 1050px;
-  margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
-  margin: 12px auto 0 auto;
 }
 
 /* 멤버 영역 */
@@ -22,6 +24,7 @@
   justify-content: flex-end;
   order: -1;
   margin-bottom: 21px;
+  margin-top: 12px;
 }
 
 .member__item {
@@ -31,12 +34,26 @@
 
 .member__item a {
   margin: 0 10px;
+  font-size: 12px;
 }
 
 .member__item:nth-child(-n + 2)::after {
   content: "";
   height: 12px;
   border-right: 1px solid var(--desingBar-color);
+}
+
+.member__item:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.member__item:last-child::after {
+  content: "";
+  display: inline-block;
+  background: url(../../imgs/header/down_icon.png) no-repeat;
+  width: 10px;
+  height: 10px;
 }
 
 /* 로고, 검색창, 서브메뉴바 컨테이너 */
@@ -114,8 +131,9 @@
 }
 
 .search-form__input {
+  background-color: white;
   border: none;
-  width: 200px;
+  width: 320px;
   height: 34px;
 }
 
@@ -128,6 +146,7 @@
 .search-form__button {
   background-color: white;
   border: none;
+  cursor: pointer;
 }
 
 /* 서브메뉴 영역 */
@@ -136,21 +155,12 @@
 }
 
 /* 메뉴(네비게이션) 영역 */
+
 .menu-container {
   display: flex;
   justify-content: space-between;
-  font-weight: 600px;
+  font-weight: 500;
   margin: 20px 0;
-}
-
-.category {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.category img {
-  margin-right: 15px;
 }
 
 .menu {
@@ -164,6 +174,12 @@
   display: flex;
   justify-content: center;
   width: 150px;
+}
+
+.menu__item a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 /* 샛별택배 박스 영역 */

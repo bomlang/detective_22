@@ -9,6 +9,7 @@
 
 /* components css */
 @import url(./components/header.css);
+@import url(./components/category.css);
 @import url(./components/order-checkBox.css);
 
 /* screen css */
